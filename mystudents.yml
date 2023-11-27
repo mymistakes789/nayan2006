@@ -1,0 +1,27 @@
+---
+- mystudents:
+  - name: anil
+    phone: 9890909090
+    address: 
+      flatno: 205
+      street: abc
+      pincode: 411002
+
+
+
+  - name: sunil
+    phone: 9890909090
+    address: 
+      flatno: 209
+      street: shds
+      pincode: 411003
+    
+  - name: venil
+    phone: 9890909090
+    address: 
+      flatno: 208
+      street: sfg
+      pincode: 411001
+    
+
+
