@@ -15,3 +15,14 @@
        state: started
       when: ansible_os_family=="Debain"
 
+    - name: i want to start webserver on ansible ubuntu node
+      dnf:
+       name: httd
+       state: started
+      when: ansible_os_family=="Redhat"
+
+    - name: i want to start webserver on ansible ubuntu node
+      service:
+       name: httd
+       state: started
+      when: ansible_os_family=="Redhat"
