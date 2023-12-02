@@ -6,7 +6,7 @@
     - name: i want to install webserver on ansible ubuntu
       apt:
        name: apache2
-       state: present
+       state: absent
       when: ansible_os_family=="Debain"
 
     - name: i want to start webserver on ansible ubuntu node
