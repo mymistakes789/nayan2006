@@ -12,6 +12,6 @@
     - name: i want to start webserver on ansible ubuntu node
       service:
        name: apache2
-       state: stopped
+       state: started
 
 
