@@ -2,9 +2,15 @@
 - hosts:
   become: yes
   tasks:
-   - name: create a file
-    file:
-     path: /home/cloud/myfirstfile
-     state: touch
+  - include_task: myfile.yml
+  - name: install webserver
+   apt:
+    name: apache2
+    state: present 
 
-     
+  - name: copy a test file to into node side
+   copy:
+    src: mytestfile
+    dest: /home/cloud
+    
+   
