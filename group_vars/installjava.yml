@@ -1,0 +1,14 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks: 
+   - name: install java on ubuntu node
+     apt:
+       name: "{{myjavapackonubuntu}}"
+       state: present 
+     when: anisble_os_family== "Debain"
+    - name: install java on redhat node
+      dnf:
+        name: "{{myjavapackonRedHat}}"
+        state: present
+      when: anisble_os_family== "RedHat"
