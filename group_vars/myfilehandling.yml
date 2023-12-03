@@ -1,0 +1,10 @@
+---
+- hosts:
+  become: yes
+  tasks:
+   - name: create a file
+    file:
+     path: /home/cloud/myfirstfile
+     state: touch
+
+     
